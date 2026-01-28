@@ -7,10 +7,14 @@ const app = express();
 
 /* ✅ OPEN CORS (REQUIRED FOR NETLIFY) */
 app.use(cors({
-  origin: 'https://sales-reg.netlify.app',
+  origin: [
+    'http://localhost:4200',
+    'https://sales-reg.netlify.app'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
 
 
 app.use(express.json());

@@ -62,6 +62,8 @@ const SalesSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  mapLink: { type: String }, // ✅ Google Maps URL
+
   status: { type: String, default: 'Submitted' }
 }, { timestamps: true });
 
