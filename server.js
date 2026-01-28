@@ -7,7 +7,7 @@ const app = express();
 
 /* ✅ OPEN CORS (REQUIRED FOR NETLIFY) */
 app.use(cors({
-  origin: 'https://sales-roda.netlify.app',
+  origin: 'https://sales-reg.netlify.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
